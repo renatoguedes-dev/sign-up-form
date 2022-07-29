@@ -9,59 +9,74 @@
   <title>Sign-up form practice</title>
 </head>
 <body>
-  <section>Logo</section>
-
-  <header id="header-div">
-    <p>This is not a real online service! You know you need something like 
-    this in your life to help you realize your deepest dreams.</p>
-    <p>Sign up now to get started.</p> 
-  </header>
-  
-  <main>
-    <h3>Let's do this!</h3>
-
-    <form action="#" method="post">
-      <div id="fields">
-        <div id="left-column">
-          <div>
-            <label for="first-name">FIRST NAME</label>
-          </div>
-          <input type="text" name="first-name" id="first-name">
-    
-          <div>
-            <label for="email">EMAIL</label>
-          </div>
-          <input type="email" name="email" id="email">
-  
-          <div>
-            <label for="password">PASSWORD</label>
-          </div>
-          <input type="password" name="password" id="password">
-        </div>
-  
-        <div id="right-column">
-          <div>
-            <label for="last-name">LAST NAME</label>
-          </div>
-          <input type="text" name="last-name" id="last-name">
-  
-          <div>
-            <label for="phone-number">PHONE NUMBER</label>
-          </div>
-          <input type="text" name="phone-number" id="phone-number" inputmode="numeric">
-  
-          <div>
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-          </div>
-          <input type="password" name="confirm-password" id="confirm-password">
-        </div>
+  <section>
+    <div id="logo">
+      <div>Odin Games</div>
+    </div>
+    <div id="photo-reference">
+      <div>
+        Photo by <a href="https://unsplash.com/@nathadej">Nat Weerawong</a>
+        on <a href="https://unsplash.com/photos/KbaPLhcY9rk">Unsplash</a>
       </div>
-    </form>
-  </main>
-  <footer>
-    <button>Create Account</button>
+    </div> 
+  </section>
 
-    <p>Already have an account? <a href="#">Log in</a></p>
-  </footer>
+  <div id="content">
+    <header id="header-div">
+      <h1>This is <em>not</em> a real online service! You know you need something like 
+      this in your life to help you realize your deepest dreams.</h1>
+      <h1>Sign up now to get started.</h1> 
+    </header>
+    
+    <main>
+      <h2>Let's do this!</h2>
+  
+      <form action="#" method="post">
+        <div id="fields">
+          <div id="left-column">
+            <div>
+              <label for="first-name">FIRST NAME</label>
+            </div>
+            <input type="text" name="first-name" id="first-name" minlength="1" maxlength="20" required>
+      
+            <div>
+              <label for="email">EMAIL</label>
+            </div>
+            <input type="email" name="email" id="email" required>
+    
+            <div>
+              <label for="password">PASSWORD</label>
+            </div>
+            <input type="password" name="password" id="password" required>
+          </div>
+    
+          <div id="right-column">
+            <div>
+              <label for="last-name">LAST NAME</label>
+            </div>
+            <input type="text" name="last-name" id="last-name" required>
+    
+            <div>
+              <label for="phone-number">PHONE NUMBER</label>
+            </div>
+            <input type="text" name="phone-number" id="phone-number" inputmode="numeric" required>
+    
+            <div>
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+            </div>
+            <input type="password" name="confirm-password" id="confirm-password" required>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <button id="create-account-btn">Create Account</button>
+  
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </footer>
+  </div>
+
+
+
 </body>
 </html>

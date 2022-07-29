@@ -1,41 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Kanit:wght@200&family=Tiro+Devanagari+Sanskrit&display=swap');
+
+:root {
+  --bcg-color: hsl(0, 0%, 95%);
+}
+
 html {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  display: grid;
-  grid-template-rows: repeat(3fr);
-  grid-template-areas: 
-    "logo h"
-    "logo m"
-    "logo f";
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: var(--bcg-color);
+  font-family: 'Kanit', sans-serif;
 }
 
 section {
-  grid-area: logo;
-  background-image: url('.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  background-image: url('scenario\ picture.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  color: aliceblue;
+}
+
+section a {
+  color: aliceblue;
+}
+
+header, main,
+footer {
+  padding: 0 4rem;
 }
 
 header {
-  grid-area: h;
+  background-color: var(--bcg-color);
+  padding-bottom: 2.5rem;
 }
 
 main {
-  grid-area: m;
+  margin: 0 0 10px 0;
+  padding-bottom: 2.5rem;
+  box-shadow: .4rem .6rem .6rem hsl(0, 0%, 85%),
+  .4rem -0.1rem .2rem hsl(0, 0%, 85%);
+  background-color: white;
 }
 
 footer {
-  grid-area: f;
-}
-
-#fields {
-  display: flex;
+  background-color: var(--bcg-color);
+  padding-top: 30px;
 }
 
 div#left-column {
   margin-right: 3rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+#photo-reference {
+  display: flex;
+  align-items: flex-end;
+  height: 45%;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45%;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 60px;
+}
+
+#logo div {
+  display: flex;
+  background-color: hsla(0, 0%, 10%, 0.6);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+}
+
+#fields {
+  display: flex;
+  font-family: 'Tiro Devanagari Sanskrit', serif;;
+}
+
+input {
+  margin-bottom: 1.5rem;
+  border-radius: .3em;
+  border: 1px solid hsl(0, 0%, 85%);
+  padding-left: .3rem;
+  height: 1.6rem;
+  width: 20rem;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
+#create-account-btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1.1rem;
+  width: 200px;
+  cursor: pointer;
+  color: white;
+  background-color: hsl(195, 86%, 50%);
+  border: none;
+  border-radius: .3em;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#create-account-btn:hover {
+  background-color: hsl(195, 86%, 40%);
+}
+
+main div label {
+  font-size: 15px;
+  font-weight: 600;
+  color: hsl(0, 0%, 30%);
 }
