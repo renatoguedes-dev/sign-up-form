@@ -138,3 +138,14 @@ main div label {
   font-weight: 600;
   color: hsl(0, 0%, 30%);
 }
+
+footer p {
+  font-size: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(195, 86%, 50%);
+  font-size: 22px;
+  font-weight: 700;
+}
