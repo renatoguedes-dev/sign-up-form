@@ -31,13 +31,14 @@
     <main>
       <h2>Let's do this!</h2>
   
-      <form action="#" method="post">
+      <form action="#">
         <div id="fields">
           <div id="left-column">
             <div>
               <label for="first-name">FIRST NAME</label>
             </div>
-            <input type="text" name="first-name" id="first-name" minlength="1" maxlength="20" required>
+            <input autocomplete="first-name" type="text" name="first-name" 
+            id="first-name" minlength="1" maxlength="20" required>
       
             <div>
               <label for="email">EMAIL</label>
@@ -54,12 +55,13 @@
             <div>
               <label for="last-name">LAST NAME</label>
             </div>
-            <input type="text" name="last-name" id="last-name" required>
+            <input type="text" name="last-name" 
+            id="last-name" required>
     
             <div>
-              <label for="phone-number">PHONE NUMBER</label>
+              <label for="phone">PHONE NUMBER</label>
             </div>
-            <input type="text" name="phone-number" id="phone-number" inputmode="numeric" required>
+            <input type="text" name="phone" id="phone" inputmode="numeric" required>
     
             <div>
               <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -67,16 +69,13 @@
             <input type="password" name="confirm-password" id="confirm-password" required>
           </div>
         </div>
-      </form>
     </main>
-    <footer>
-      <button id="create-account-btn">Create Account</button>
-  
-      <p>Already have an account? <a href="#">Log in</a></p>
-    </footer>
+      <footer>
+        <button type="submit" id="create-account-btn">Create Account</button>
+        
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </footer>
+      </form>
   </div>
-
-
-
 </body>
 </html>
